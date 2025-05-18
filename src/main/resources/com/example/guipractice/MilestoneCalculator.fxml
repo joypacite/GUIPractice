@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="464.0" prefWidth="461.0" spacing="15" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guipractice.MSCalculatorController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Milestone Grade Calculator">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Label>
+   <Label layoutX="208.0" layoutY="335.0" text="Milestone 1" />
+
+    <TextField fx:id="milestone1Field" promptText="Milestone 1 (Max 25)" />
+   <Label text="Milestone 2" />
+    <TextField fx:id="milestone2Field" promptText="Milestone 2 (Max 40)" />
+   <Label text="Terminal Assessment" />
+    <TextField fx:id="terminalAssessmentField" promptText="Terminal Assessment (Max 35)" />
+
+
+    <Button onAction="#calculateGrade" text="Calculate Grade" />
+    <Label fx:id="resultLabel" text="Final Grade: " />
+</VBox>
